@@ -50,8 +50,8 @@ Ubuntu cloud-init configuration files within the image (`/boot/user-data` and `/
     #cloud-config
 
     # Set TimeZone and Locale
-    timezone: Europe/Madrid
-    locale: es_ES.UTF-8
+    timezone: Europe/Amsterdam
+    locale: nl_NL.UTF-8
 
     # Hostname
     hostname: gateway

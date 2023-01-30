@@ -1075,7 +1075,7 @@ For speed-up the installation there is available a [helm chart](https://github.c
           fieldPath: spec.nodeName
     # Specify TZ
     - name: TZ
-      value: "Europe/Madrid"
+      value: "Europe/Amsterdam"
   # Fluentbit config
   config:
     # Helm chart combines service, inputs, outputs, custom_parsers and filters section
@@ -1275,7 +1275,7 @@ env:
         fieldPath: spec.nodeName
   # Specify TZ
   - name: TZ
-    value: "Europe/Madrid"
+    value: "Europe/Amsterdam"
 ```
 
 - Fluentd aggregator connection details (IP: `FLUENT_AGGREGATOR_HOST`, port: `FLUENT_AGGREGATOR_PRORT`) and TLS forward protocol configuration (shared key: `FLUENT_AGGREGATOR_SHARED_KEY` and self-hostname: `FLUENT_SELFHOSTNAME`) are passed as environment variables to the fluentbit pod, so forwarder output plugin can be configured. Shared-key is obtanined from the corresponding Secret and selfhost-name from the node running the POD.
@@ -1525,7 +1525,7 @@ The file content has the following sections:
   ```
   This filter executes a local-time-to-utc filter (Lua script). It applies to system level logs (`/var/log/syslog` and `/var/log/auth.log`) . It translates logs timestamps from local time to UTC format.
 
-  This is needed because time field included in these logs does not contain information about TimeZone. Since I am not using UTC time in my cluster (cluser is using `Europe/Madrid` timezone), Fluentbit/Elasticsearch, when parsing them, assumes they are in UTC timezone displaying them in the future.
+  This is needed because time field included in these logs does not contain information about TimeZone. Since I am not using UTC time in my cluster (cluser is using `Europe/Amsterdam` timezone), Fluentbit/Elasticsearch, when parsing them, assumes they are in UTC timezone displaying them in the future.
   See issue [#5](https://github.com/ricsanfre/pi-cluster/issues/5).
 
 ##### customParser.conf
@@ -1757,7 +1757,7 @@ For deploying fluent-bit in forwarder-only architecture, without aggregation lay
         key: elastic
   # Specify TZ
   - name: TZ
-    value: "Europe/Madrid"
+    value: "Europe/Amsterdam"
   ```
 
   Elasticsearch connection details (IP: `FLUENT_ELASTICSEARCH_HOST` and port: `FLUENT_ELASTICSEARCH_PORT` ) and access credentials (`FLUENT_ELASTICSEARCH_USER` and `FLUENT_ELASTICSEARCH_PASSWD`) are passed as environment variables to the fluentbit pod (`elastic` user password obtaining from the corresponding Secret).

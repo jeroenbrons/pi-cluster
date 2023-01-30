@@ -19,7 +19,7 @@ social:
     - https://github.com/ricsanfre
 
 # Timezone
-timezone: Europe/Madrid
+timezone: Europe/Amsterdam
 
 # Enable matoma analytics
 matoma_analytics: true
