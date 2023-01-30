@@ -1,7 +1,7 @@
 .EXPORT_ALL_VARIABLES:
 
-GPG_EMAIL=ricsanfre@gmail.com
-GPG_NAME=Ricardo Sanchez
+GPG_EMAIL=sparcie@sparcie.ml
+GPG_NAME=SPARCie
 
 .PHONY: default
 default: clean
