@@ -1,0 +1,1 @@
+virt-install --name=gateway --ram=2048 --vcpus=1 --import --disk path=~/focal-server-cloudimg-amd64.img,format=qcow2 --disk path=ci-gateway.iso,device=cdrom --os-variant=ubuntu20.04 --network network=bridged-network,model=virtio --graphics vnc,listen=0.0.0.0 --noautoconsole
