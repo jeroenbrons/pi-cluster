@@ -19,7 +19,7 @@ users:
     sudo: ALL=(ALL) NOPASSWD:ALL
     lock_passwd: true
     ssh_authorized_keys:
-      - ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAusTXKfFoy6p3G4QAHvqoBK+9Vn2+cx2G5AY89WmjMikmeTG9KUseOCIAx22BCrFTNryMZ0oLx4u3M+Ibm1nX76R3Gs4b+gBsgf0TFENzztST++n9/bHYWeMVXddeV9RFbvPnQZv/TfLfPUejIMjFt26JCfhZdw3Ukpx9FKYhFDxr2jG9hXzCY9Ja2IkVwHuBcO4gvWV5xtI1nS/LvMw44Okmlpqos/ETjkd12PLCxZU6GQDslUgGZGuWsvOKbf51sR+cvBppEAG3ujIDySZkVhXqH1SSaGQbxF0pO6N5d4PWus0xsafy5z1AJdTeXZdBXPVvUSNVOUw8lbL+RTWI2Q== ubuntu@mi_pc
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC2gGa8W3d7o4qgXpoYskI9+vsUWVRCx5YmoJ3HCvgpkdRG9QlDNUJfaCJkZndwLrJ/Oq+Di5PSGm9C6Eyum88z5meM1SajRRkrKeAydx5lqZV+bL+HRTCMfPkLZ+EkKHOPEosfrrnztMvmLsXHILuoB+k4C7TCd93BYEj5kKTuV8TbH+nonieRQx20q7N92ZMkdJgvdb7vbCKT7JMB55cfGfRiIr7XyJjNH7KEeMmNd7pbGBsmKjGerkX3dnsD06wbTFqAbggBX90bW4yQ1bGs4giYFklqD+ptBegD/+3Xi2WQ12aZFVcYV0MTauv5eeYlogT2p6L5mH3b63qlrs4F jeroen@Henks-MacBook.local
   # Ansible user
   - name: ansible
     primary_group: users
