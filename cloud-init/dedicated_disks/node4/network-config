@@ -11,7 +11,7 @@ version: 2
 ethernets:
   eth0:
     dhcp4: false
-    addresses: [192.168.20.60/24]
+    addresses: [192.168.20.64/24]
     gateway4: 192.168.20.1
     nameservers:
       addresses: [192.168.0.22]

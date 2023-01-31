@@ -1,1 +1,1 @@
-genisoimage -output ci-gateway.iso -V cidata -r -J user-data meta-data
+genisoimage -output ci-gateway.iso -V cidata -r -J user-data meta-data network-config

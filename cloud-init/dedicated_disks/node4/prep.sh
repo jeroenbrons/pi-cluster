@@ -1,1 +1,1 @@
-genisoimage -output ci-node4.iso -V cidata -r -J user-data meta-data
+genisoimage -output ci-node4.iso -V cidata -r -J user-data meta-data  network-config
