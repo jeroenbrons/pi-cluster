@@ -6,5 +6,5 @@
 ####################
 
 ntp_servers:
-  - server: 10.0.0.1
+  - server: 192.168.0.22
     type: server

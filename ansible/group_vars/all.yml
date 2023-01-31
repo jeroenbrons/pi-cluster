@@ -12,8 +12,8 @@ centralized_san: false
 # DNS configuration
 #######################
 # DNS server
-dns_server: 10.0.0.1
-dns_domain: picluster.ricsanfre.com
+dns_server: 192.168.0.22
+dns_domain: picluster.k3sspk.tk
 
 ############################
 # restic backup role variables
