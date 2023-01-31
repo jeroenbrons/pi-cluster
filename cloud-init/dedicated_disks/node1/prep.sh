@@ -1,2 +1,2 @@
-genisoimage -output ci-node1.iso -V cidata  -joliet -rock  user-data meta-data 
-# network-config
+cloud-localds seed-node1.img user-data meta-data
+cp *.img /ciiso

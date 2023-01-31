@@ -1,1 +1,2 @@
-genisoimage -output ci-gateway.iso -V cidata -r -J user-data meta-data network-config
+cloud-localds seed-gateway.img user-data meta-data
+cp *.img /ciiso

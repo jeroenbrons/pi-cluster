@@ -1,1 +1,1 @@
-virt-install --name=node1 --ram=8192 --vcpus=4 --import --disk path=/vmstore/node1.qcow2,format=qcow2 --disk path=ci-node1.iso,device=cdrom --os-variant=ubuntu20.04 -w network=default,model=virtio --graphics vnc,listen=0.0.0.0 --noautoconsole
+virt-install --name=node1 --ram=8192 --vcpus=4 --import --disk path=/vmstore/node1.qcow2,format=qcow2 --disk format=raw,path=/ciiso/seed-node1.img --os-variant=ubuntu20.04 -w network=bridged-network,model=virtio --graphics vnc,listen=0.0.0.0 --noautoconsole

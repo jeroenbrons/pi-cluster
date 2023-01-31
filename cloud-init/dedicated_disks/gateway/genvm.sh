@@ -1,1 +1,1 @@
-virt-install --name=gateway --ram=1024 --vcpus=1 --import --disk path=/vmstore/gateway.qcow2,format=qcow2 --disk path=ci-gateway.iso,device=cdrom --os-variant=ubuntu20.04 -w bridge=br0,model=virtio --graphics vnc,listen=0.0.0.0 --noautoconsole
+virt-install --name=gateway --ram=512 --vcpus=1 --import --disk path=/vmstore/gateway.qcow2,format=qcow2 --disk path=/ciiso/seed-gateway.img,device=cdrom --os-variant=ubuntu20.04 -w network=bridged-network,model=virtio --graphics vnc,listen=0.0.0.0 --noautoconsole
