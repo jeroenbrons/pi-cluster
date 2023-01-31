@@ -1,1 +1,2 @@
-genisoimage -output ci-node1.iso -V cidata -r -J user-data meta-data  network-config
+genisoimage -output ci-node1.iso -V cidata  -joliet -rock  user-data meta-data 
+# network-config

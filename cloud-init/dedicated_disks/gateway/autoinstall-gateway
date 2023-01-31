@@ -1,0 +1,34 @@
+version: 1
+
+user-data: |
+    #cloud-config
+
+    # Set TimeZone and Locale
+    timezone: Europe/Amsterdam
+    locale: nl_NL.UTF-8
+
+    # Hostname
+    hostname: gateway
+
+    # cloud-init not managing hosts file. only hostname is added
+    manage_etc_hosts: localhost
+
+    users:
+    # not using default ubuntu user
+    - name: oss
+        primary_group: users
+        groups: [adm, admin]
+        shell: /bin/bash
+        sudo: ALL=(ALL) NOPASSWD:ALL
+        password: $6$2M/Xma/AExCLFnVo$Cxb2OG2OI6bK7KI5TmcwyadizGns0xB4wmVYPeo073uu7bZm83Um7FZ6I6OW91ZmFJ4.YYIc3eK2u/Ovyx2RK.
+        ssh_authorized_keys:
+        - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC2gGa8W3d7o4qgXpoYskI9+vsUWVRCx5YmoJ3HCvgpkdRG9QlDNUJfaCJkZndwLrJ/Oq+Di5PSGm9C6Eyum88z5meM1SajRRkrKeAydx5lqZV+bL+HRTCMfPkLZ+EkKHOPEosfrrnztMvmLsXHILuoB+k4C7TCd93BYEj5kKTuV8TbH+nonieRQx20q7N92ZMkdJgvdb7vbCKT7JMB55cfGfRiIr7XyJjNH7KEeMmNd7pbGBsmKjGerkX3dnsD06wbTFqAbggBX90bW4yQ1bGs4giYFklqD+ptBegD/+3Xi2WQ12aZFVcYV0MTauv5eeYlogT2p6L5mH3b63qlrs4F jeroen@Henks-MacBook.local
+    # Ansible user
+    - name: ansible
+        primary_group: users
+        shell: /bin/bash
+        sudo: ALL=(ALL) NOPASSWD:ALL
+        lock_passwd: true
+        ssh_authorized_keys:
+        - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDsVSvxBitgaOiqeX4foCfhIe4yZj+OOaWP+wFuoUOBCZMWQ3cW188nSyXhXKfwYK50oo44O6UVEb2GZiU9bLOoy1fjfiGMOnmp3AUVG+e6Vh5aXOeLCEKKxV3I8LjMXr4ack6vtOqOVFBGFSN0ThaRTZwKpoxQ+pEzh+Q4cMJTXBHXYH0eP7WEuQlPIM/hmhGa4kIw/A92Rm0ZlF2H6L2QzxdLV/2LmnLAkt9C+6tH62hepcMCIQFPvHVUqj93hpmNm9MQI4hM7uK5qyH8wGi3nmPuX311km3hkd5O6XT5KNZq9Nk1HTC2GHqYzwha/cAka5pRUfZmWkJrEuV3sNAl ansible@pimaster
+
