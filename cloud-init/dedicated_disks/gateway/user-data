@@ -17,7 +17,7 @@ users:
     groups: [adm, admin]
     shell: /bin/bash
     sudo: ALL=(ALL) NOPASSWD:ALL
-    password: $1$Kaengox1$vX1AnbpjBaEfdTGO9gjm/0
+    password: $6$2M/Xma/AExCLFnVo$Cxb2OG2OI6bK7KI5TmcwyadizGns0xB4wmVYPeo073uu7bZm83Um7FZ6I6OW91ZmFJ4.YYIc3eK2u/Ovyx2RK.
     ssh_authorized_keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC2gGa8W3d7o4qgXpoYskI9+vsUWVRCx5YmoJ3HCvgpkdRG9QlDNUJfaCJkZndwLrJ/Oq+Di5PSGm9C6Eyum88z5meM1SajRRkrKeAydx5lqZV+bL+HRTCMfPkLZ+EkKHOPEosfrrnztMvmLsXHILuoB+k4C7TCd93BYEj5kKTuV8TbH+nonieRQx20q7N92ZMkdJgvdb7vbCKT7JMB55cfGfRiIr7XyJjNH7KEeMmNd7pbGBsmKjGerkX3dnsD06wbTFqAbggBX90bW4yQ1bGs4giYFklqD+ptBegD/+3Xi2WQ12aZFVcYV0MTauv5eeYlogT2p6L5mH3b63qlrs4F jeroen@Henks-MacBook.local
   # Ansible user

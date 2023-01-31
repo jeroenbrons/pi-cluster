@@ -1,4 +1,9 @@
 version: 1
+autoinstall: 
+      identity: 
+        hostname: gateway
+        password: $6$2M/Xma/AExCLFnVo$Cxb2OG2OI6bK7KI5TmcwyadizGns0xB4wmVYPeo073uu7bZm83Um7FZ6I6OW91ZmFJ4.YYIc3eK2u/Ovyx2RK.
+        username: sparcie
 
 user-data: |
     #cloud-config

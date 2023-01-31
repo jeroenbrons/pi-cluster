@@ -1,5 +1,10 @@
+#cloud-config
 version: 1
-
+autoinstall:
+  version: 1
+ssh:
+    allow-pw: true
+    install-server: true
 user-data: |
     #cloud-config
 
