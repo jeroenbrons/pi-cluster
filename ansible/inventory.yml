@@ -4,7 +4,7 @@ all:
     control:
       hosts:
         gateway:
-          hostname: gateway
+          hostname: gatewayk3s
           ansible_host: 192.168.20.67
           ip: 192.168.20.67
           mac: 52:54:00:0e:22:e0
@@ -17,12 +17,12 @@ all:
     picluster:
       hosts:
         node1:
-          hostname: node1
+          hostname: k3snode1
           ansible_host: 192.168.20.20
           ip: 192.168.20.20
           mac: 52:54:00:41:1a:07
         node2:
-          hostname: node2
+          hostname: k3snode2
           ansible_host: 192.168.20.30
           ip: 192.168.20.30
           mac: 52:54:00:54:7f:f3
